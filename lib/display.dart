@@ -57,7 +57,7 @@ class _DisplayState extends State<Display> {
                           ),
                           const Divider(),
                           ListTile(
-                            title: const Text('Has a mobile phone'),
+                            title: const Text('Mobile phone status'),
                             trailing: Checkbox(
                               value: appState.people[_currentPerson].hasPhone,
                               onChanged: null,

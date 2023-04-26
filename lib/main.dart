@@ -44,7 +44,12 @@ class _MyAppState extends State<MyApp> {
               : 'Displaying Person Data'),
           centerTitle: true,
         ),
-        body: _isCollecting ? const Collection() : const Display(),
+        body: Center(
+          child: SizedBox(
+            width: 500,
+            child: _isCollecting ? const Collection() : const Display(),
+          ),
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: _toggleScreen,
           child: Icon(
